@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:oneshot="true"
+     android:shareInterpolator="false"
+    >
+    <!--shareInterpolator:动画效果是否共享一个Interpolator-->
+    <!--自定义的一种渐变动画效果/set:组合动画效果-->
+    <translate
+        android:duration="1000"
+        android:fillAfter="true"
+        android:fillEnabled="true"
+        android:fromYDelta="-480"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:toYDelta="0"/>
+    <!--android:fillEnabled:设置动画结束后保持当前的位置-->
+    <alpha
+        android:duration="1000"
+        android:fromAlpha="0.3"
+        android:toAlpha="1.0"/>
+
+    <scale
+        android:duration="1000"
+        android:fromXScale="0.0"
+        android:fromYScale="0.0"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="1.1"
+        android:toYScale="1.1"/>
+
+</set>

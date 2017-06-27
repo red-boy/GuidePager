@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cxy.guidepager.newguide.SecondActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom">
+
+        <com.example.cxy.guidepager.newguide.ViewPagerIndicatorView
+            android:id="@+id/pci_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="8dp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</RelativeLayout>
